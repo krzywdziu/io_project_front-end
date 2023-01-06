@@ -40,10 +40,12 @@ class SearchContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+      <div className="inner">
       <Header />
       <InputSearch />
       <SearchList items={this.state.items} />
+    </div>
     </div>
     )
   }
