@@ -13,7 +13,9 @@ Instalacja Linux(Ubuntu)
 1. W terminalu wpisz: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
 
 1.1 Jeśli pokazuje się powiadomienie nvm not found:  touch ~/.bash_profile i powtórzenie polecenia powyższej komendy
+
 2. Restart terminala
+
 3. Wpisz po kolei w terminalu: 
 
 nvm install 4.2.1
