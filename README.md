@@ -5,9 +5,10 @@ Instalacja Windows
 
 1. Zainstaluj node.js, jezeli nie masz
 2. Wpisz w cmd: npx create-react-app <nazwa folderu, ktory zostanie stworzony i w nim bedzie aplikacja>
-3. Pobierz src i public z gita i zamien je z tymi, ktore sie stworzyly w folderze
-4. Wpisz komende: set NODE_OPTIONS=--openssl-legacy-provider (mozliwe, ze bedzie dzialac bez tej komendy)
-5. Wpisz "npm start" i powinna sie odpalic aplikacja w przegladarce
+3. Zainstaluj axios przy pomocy  komendy: npm install axios
+4. Pobierz src i public z gita i zamien je z tymi, ktore sie stworzyly w folderze
+5. Wpisz komende: set NODE_OPTIONS=--openssl-legacy-provider (mozliwe, ze bedzie dzialac bez tej komendy)
+6. Wpisz "npm start" i powinna sie odpalic aplikacja w przegladarce
 
 Instalacja Linux(Ubuntu)
 1. W terminalu wpisz: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
@@ -30,3 +31,9 @@ sudo cp -r $n/{bin,lib,share} /usr/local
 4. npx create-react-app nazwa_aplikacji
 5. Pobierz src i public z gita i zamien je z tymi, ktore sie stworzyły w folderze
 6. Wpisz "npm start" i powinna sie odpalic aplikacja w przegladarce
+
+Do backendu należy dopisać
+@CrossOrigin nad @PostMapping 
+oraz
+import import org.springframework.web.bind.annotation.*; 
+W celu rozwiązania problemów z CORS
