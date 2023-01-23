@@ -27,6 +27,9 @@ class InputSearch extends Component {
 
       async searchItems() {
 
+      let element = document.getElementById("loading_img");
+      element.removeAttribute("hidden")
+
       var data = JSON.stringify(this.state.title);
 
         var config = {
@@ -43,9 +46,11 @@ class InputSearch extends Component {
         .then(function (response) {
           //console.log(JSON.stringify(response.data));
           that.updateItems(response.data);
+          element.setAttribute("hidden", "hidden")
         })
         .catch(function (error) {
           console.log(error);
+          element.setAttribute("hidden", "hidden")
         });
 
        
@@ -85,7 +90,6 @@ class InputSearch extends Component {
           });
 */
 
-
 /*
 
         console.log(item)
@@ -112,6 +116,7 @@ class InputSearch extends Component {
   
       render() {
     return (
+    <div>
       <form onSubmit={this.handleSubmit} className="form-container">
         <input 
         className="input-text" 
@@ -122,6 +127,8 @@ class InputSearch extends Component {
         />
         <button className="input-submit">Search</button>
       </form>
+      <img src="loading-gif.gif" alt="loading" id="loading_img" hidden/>
+    </div>
     )
   }
 }

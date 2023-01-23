@@ -2,6 +2,7 @@ import React from "react"
 import SearchList from "./SearchList";
 import Header from "./Header"
 import InputSearch from "./InputSearch"
+import Login from "./Login";
 
 class SearchContainer extends React.Component {
     constructor(props) {
@@ -86,10 +87,13 @@ class SearchContainer extends React.Component {
   render() {
     return (
       <div className="container">
-      <div className="inner">
+        <div className="inner">
       <Header />
       <InputSearch handleItems = {this.handleItems}/>
       <SearchList items={this.state.items} />
+    </div>
+    <div className="right">
+      <Login/>
     </div>
     </div>
     )
