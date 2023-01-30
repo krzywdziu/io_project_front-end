@@ -29,17 +29,17 @@ class InputSearch extends Component {
 
       let element = document.getElementById("loading_img");
       element.removeAttribute("hidden")
+      
+      var data = this.state.title;
 
-      var data = JSON.stringify(this.state.title);
+      var config = {
+        method: 'get',
+        maxBodyLength: Infinity,
+        url: '//localhost:8080/search?query=' + data,
+        headers: { },
+        data : ""
+      };
 
-        var config = {
-          method: 'post',
-          url: '//localhost:8080/search',
-          headers: { 
-            'Content-Type': 'application/json'
-          },
-          data : data
-        };
         var that = this
 
         axios(config)
@@ -50,6 +50,7 @@ class InputSearch extends Component {
         })
         .catch(function (error) {
           console.log(error);
+          alert("Problem wyszukiwania")
           element.setAttribute("hidden", "hidden")
         });
 
