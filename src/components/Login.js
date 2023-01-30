@@ -29,10 +29,18 @@ class Login extends Component {
           axios(config)
           .then(function (response) {
             console.log(JSON.stringify(response.data));
+            alert(JSON.stringify(response.data))
           })
           .catch(function (error) {
             console.log(error);
-            alert(error.response.data.errors)
+             var err1 = JSON.stringify(error.response.data.errors)
+             var err2 = JSON.stringify(error.response.data.message)
+             if (err1 === undefined){
+              alert(err2)
+             }
+             else{
+              alert(err1)
+             }
           });
 
       };
@@ -64,6 +72,7 @@ class Login extends Component {
           axios(config)
           .then(function (response) {
             console.log(JSON.stringify(response.data));
+            alert(JSON.stringify(response.data))
           })
           .catch(function (error) {
             console.log(error);
