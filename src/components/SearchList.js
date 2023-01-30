@@ -8,9 +8,9 @@ class SearchList extends React.Component {
         <div id="item-sort">
         Sortowanie:
 
-        <select name="sortSelect" id="sortSelect">
-          <option value="min">Od najniższej ceny</option>
-          <option value="max">Od najwyższej ceny</option>
+        <select name="sortSelect" id="sortSelect" onChange={this.props.changeSort}>
+          <option value="LowHigh">Od najniższej ceny</option>
+          <option value="HighLow">Od najwyższej ceny</option>
         </select>
 
         </div>
