@@ -19,7 +19,7 @@ class Login extends Component {
 
         var config = {
             method: 'post',
-            url: '//localhost:8080/login',
+            url: '//10.160.73.86:8080/login',
             headers: { 
               'Content-Type': 'application/json'
             },
@@ -62,7 +62,7 @@ class Login extends Component {
 
         var config = {
             method: 'post',
-            url: '//localhost:8080/register',
+            url: '//10.160.73.86:8080/register',
             headers: { 
               'Content-Type': 'application/json'
             },
