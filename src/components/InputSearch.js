@@ -38,7 +38,7 @@ class InputSearch extends Component {
       var config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: '//localhost:8080/search?query=' + data,
+        url: '//10.160.73.86/:8080/search?query=' + data,
         headers: { },
         data : ""
       };
