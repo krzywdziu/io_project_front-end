@@ -131,7 +131,7 @@ class InputSearch extends Component {
         />
         <button className="input-submit">Search</button>
       </form>
-      <img src="loading-gif.gif" alt="loading" id="loading_img" hidden/>
+      <img src="https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif" alt="loading" id="loading_img" hidden/>
     </div>
     )
   }
