@@ -153,7 +153,7 @@ class SearchContainer extends React.Component {
     switch(check){
       case 'LowHigh':
         data.sort((a, b) => {
-          return a.price - b.price
+          return b.price - a.price
         });
         console.log("test")
         console.log(data)
@@ -162,7 +162,7 @@ class SearchContainer extends React.Component {
 
       case 'HighLow':
         data.sort((a, b) => {
-          return b.price - a.price
+          return a.price - b.price
         });
         this.setState({items_sorted: data});
         break;
