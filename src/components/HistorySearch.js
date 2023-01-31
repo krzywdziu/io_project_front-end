@@ -13,7 +13,7 @@ class HistorySearch extends Component {
         var config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url:  '//localhost:8080/search/history/export?extension=csv',
+        url:  '//10.160.73.86:8080/search/history/export?extension=csv',
         headers: { },
         data : data
         };
@@ -33,7 +33,7 @@ class HistorySearch extends Component {
         var config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url:  '//localhost:8080/search/history/export?extension=pdf',
+        url:  '//10.160.73.86:8080/search/history/export?extension=pdf',
         headers: { },
         data : data
         };
