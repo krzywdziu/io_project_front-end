@@ -129,7 +129,7 @@ class InputSearch extends Component {
         value={this.state.title} 
         onChange={this.onChange} 
         />
-        <button className="input-submit">Search</button>
+        <button className="input-submit">Wyszukaj</button>
       </form>
       <img src="https://media.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif" alt="loading" id="loading_img" hidden/>
     </div>
