@@ -16,8 +16,6 @@ function SearchItem(props) {
       <input type="button" 
       onClick={() => window.location.href = props.items.ceneoProductUrl} 
       value="Strona Sklepu"></input>
-      <input type="button" value="Dodaj do koszyka">
-      </input>
       </div> 
     </div>
   }
